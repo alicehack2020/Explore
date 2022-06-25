@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/ic_launcher_foreground"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+      android:layout_centerVertical="true"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:src="@drawable/tonry"
+            android:layout_width="match_parent"
+            android:layout_height="200dp">
+        </ImageView>
+
+        <EditText
+            android:layout_margin="10dp"
+            android:background="@drawable/boarder"
+            android:id="@+id/userEmail"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:gravity="center"
+            android:hint="Enter Your Email"
+            android:inputType="textPersonName"
+            />
+        <EditText
+            android:layout_margin="10dp"
+            android:background="@drawable/boarder"
+            android:id="@+id/userPassword"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:gravity="center"
+            android:hint="Enter your password"
+            android:inputType="textPersonName"
+            />
+        <Button
+            android:text="Login"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content">
+        </Button>
+
+        <LinearLayout
+            android:id="@+id/loginGoogle"
+             android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <ImageButton
+                android:id="@+id/Google"
+                android:layout_width="wrap_content"
+                android:layout_height="60dp"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentRight="true"
+                android:src="@drawable/js" />
+
+            <Button
+                android:text="Google"
+                android:layout_width="150dp"
+                android:layout_height="60dp">
+            </Button>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/loginFacebook"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <ImageButton
+                android:id="@+id/facebook"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentRight="true"
+                android:src="@android:drawable/ic_menu_search" />
+
+            <Button
+                android:text="Facebook"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content">
+            </Button>
+        </LinearLayout>
+
+
+        <TextView
+            android:id="@+id/register"
+            android:text="Register"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+        </TextView>
+
+
+
+    </LinearLayout>
+
+
+
+
+</RelativeLayout>
