@@ -15,13 +15,12 @@ public interface ApiInterface {
     @GET("/todos")
     Call<List<Todo>> getTodos();
 
-//    @GET("/todos/{id}")
-//    Call<Todo> getTodo(@Path("id") int id);
-//
-//    @GET("/todos")
-//    Call<List<Todo>> getTodosUsingQuery(@Query("userId") int userId, @Query("completed") boolean completed);
-//
-//    @POST("/todos")
-//    Call<Todo> postTodo(@Body  Todo todo);
+    @GET("/todos/{id}")
+    Call<Todo>getTodo(@Path("id") int id);
 
+    @GET("/todos")
+    Call<List<Todo>> getTodoUsingQuery(@Query("userId") int userId,@Query("completed") boolean completed);
+
+    @POST("/todos")
+    Call<Todo> postTodos(@Body Todo todo);
 }
